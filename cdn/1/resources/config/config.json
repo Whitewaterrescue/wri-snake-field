@@ -1,0 +1,1392 @@
+{
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "mainLocale": "en",
+  "theme": "themes/dark/",
+  "utilities": {},
+  "customTheme": {},
+  "customThemeOptions": {},
+  "forBuilderAttributes": {
+    "lockLayout": true,
+    "viewPortSize": {
+      "MEDIUM": {
+        "width": 834,
+        "height": 1112
+      },
+      "SMALL": {
+        "width": 414,
+        "height": 736
+      }
+    }
+  },
+  "template": "chronology",
+  "useAutoSortInFixedLayout": true,
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "Snake River GRP Field Map",
+      "itemId": "9bef58c2603d422ab6e0e24e01d1ced0",
+      "portalUrl": "https://wrienviro.maps.arcgis.com",
+      "isHidden": false,
+      "childDataSourceJsons": {
+        "SNK_sites": {
+          "id": "dataSource_1-SNK_sites",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Strategy Sites",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "61f1fd6c7840445a9b203f808bc86125",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Strategy_Sites_pub/FeatureServer/0"
+        },
+        "SNK_booms": {
+          "id": "dataSource_1-SNK_booms",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Boom Lines",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "36d90d493a4d4706a60ee79a18e02222",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Boom_Lines_pub/FeatureServer/0"
+        },
+        "SNK_staging": {
+          "id": "dataSource_1-SNK_staging",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Staging Zones",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "d5b4cd22892843ac8ea579c5b82c941a",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Staging_Zones_pub/FeatureServer/0"
+        },
+        "SNK_logistics": {
+          "id": "dataSource_1-SNK_logistics",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Logistics Resources",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "bbc3be04088941e59510032789d318bb",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Logistics_Resources_pub/FeatureServer/0"
+        },
+        "SNK_sectors": {
+          "id": "dataSource_1-SNK_sectors",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "Sectors",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "1378afa6546c47218f11f100744127cc",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Sectors_pub/FeatureServer/0"
+        },
+        "SNK_panos": {
+          "id": "dataSource_1-SNK_panos",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "360 Panoramas",
+          "portalUrl": "https://wrienviro.maps.arcgis.com",
+          "itemId": "78e5bce8970d467da484d6a3f82f6919",
+          "layerId": "0",
+          "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Panos_pub/FeatureServer/0"
+        }
+      }
+    }
+  },
+  "pages": {
+    "page_1": {
+      "id": "page_1",
+      "label": "Sites",
+      "type": "NORMAL",
+      "mode": "FIT_WINDOW",
+      "layout": {
+        "LARGE": "layout_p1",
+        "MEDIUM": "layout_p1",
+        "SMALL": "layout_p1"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "bodyBackgroundColor": ""
+    },
+    "page_2": {
+      "id": "page_2",
+      "label": "Map",
+      "type": "NORMAL",
+      "mode": "FIT_WINDOW",
+      "layout": {
+        "LARGE": "layout_p2",
+        "MEDIUM": "layout_p2",
+        "SMALL": "layout_p2"
+      },
+      "isDefault": false,
+      "isVisible": true,
+      "bodyBackgroundColor": ""
+    }
+  },
+  "pageStructure": [
+    {
+      "page_1": []
+    },
+    {
+      "page_2": []
+    }
+  ],
+  "layouts": {
+    "layout_p1": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "SECTION",
+          "sectionId": "section_1",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "hCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "bbox": {
+            "left": "",
+            "right": "10px",
+            "top": "10px",
+            "bottom": "",
+            "width": "48px",
+            "height": "40px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_p2": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1",
+        "2"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_11",
+          "bbox": {
+            "left": "12px",
+            "right": "0px",
+            "top": "0px",
+            "bottom": "24px",
+            "width": "250px",
+            "height": "48px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "bbox": {
+            "left": "",
+            "right": "10px",
+            "top": "10px",
+            "bottom": "",
+            "width": "48px",
+            "height": "40px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": true,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "CUSTOM",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_v1": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "4px",
+            "bottom": "",
+            "width": "100%",
+            "height": "40px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "48px",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_v2": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "2",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "4px",
+            "bottom": "",
+            "width": "100%",
+            "height": "40px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "316px",
+            "bottom": "0px",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_10",
+          "bbox": {
+            "left": "0px",
+            "right": "0px",
+            "top": "48px",
+            "bottom": "",
+            "width": "100%",
+            "height": "260px"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": true,
+              "width": "STRETCH",
+              "height": "CUSTOM"
+            },
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_card": {
+      "type": "FIXED",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "8px",
+            "right": "8px",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "setting": {
+            "lockParent": true,
+            "vCenter": true,
+            "hCenter": false,
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            }
+          },
+          "isPending": false
+        }
+      }
+    },
+    "layout_ctrl_map": {
+      "type": "FIXED",
+      "order": [
+        "0",
+        "1"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_12",
+          "bbox": {},
+          "setting": {}
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "bbox": {},
+          "setting": {}
+        }
+      },
+      "label": "Map tools layout"
+    }
+  },
+  "sections": {
+    "section_1": {
+      "id": "section_1",
+      "label": "Site browser",
+      "views": [
+        "view_1",
+        "view_2"
+      ]
+    }
+  },
+  "views": {
+    "view_1": {
+      "id": "view_1",
+      "label": "List",
+      "layout": {
+        "LARGE": "layout_v1",
+        "MEDIUM": "layout_v1",
+        "SMALL": "layout_v1"
+      }
+    },
+    "view_2": {
+      "id": "view_2",
+      "label": "Details",
+      "layout": {
+        "LARGE": "layout_v2",
+        "MEDIUM": "layout_v2",
+        "SMALL": "layout_v2"
+      }
+    }
+  },
+  "dialogs": {},
+  "messageConfigs": {
+    "messageConfig_1": {
+      "id": "messageConfig_1",
+      "widgetId": "widget_2",
+      "messageType": "DATA_RECORDS_SELECTION_CHANGE",
+      "actions": [
+        {
+          "actionId": "widget_10-zoomToFeature-snk1",
+          "widgetId": "widget_10",
+          "messageWidgetId": "widget_2",
+          "actionName": "zoomToFeature",
+          "description": null,
+          "config": {
+            "useDataSource": null,
+            "useDataSources": [],
+            "goToInitialMapExtentWhenSelectionCleared": false,
+            "useAnyTriggerData": true
+          },
+          "version": "1.20.0"
+        }
+      ]
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "id": "widget_1",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Map",
+      "config": {
+        "initialMapDataSourceID": "dataSource_1",
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": false
+        },
+        "isUseCustomMapState": false
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ],
+      "useDataSourcesEnabled": true,
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "style": "esriSFSSolid",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_7": {
+      "id": "widget_7",
+      "uri": "widgets/arcgis/legend/",
+      "version": "1.20.0",
+      "label": "Legend",
+      "config": {},
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    },
+    "widget_2": {
+      "id": "widget_2",
+      "uri": "widgets/common/list/",
+      "version": "1.20.0",
+      "label": "Site List",
+      "config": {
+        "maxItems": 100,
+        "space": 6,
+        "verticalSpace": 6,
+        "horizontalSpace": 10,
+        "itemsPerPage": 25,
+        "isItemStyleConfirm": true,
+        "isInitialed": true,
+        "pageStyle": "SCROLL",
+        "itemStyle": "STYLE6",
+        "hoverType": "HOVER0",
+        "selectedStyle": "STYLE0",
+        "differentOddEven": false,
+        "scrollBarOpen": true,
+        "direction": "VERTICAL",
+        "alignType": "CENTER",
+        "scrollStep": 2,
+        "cardConfigs": {
+          "DEFAULT": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 64
+              }
+            },
+            "enable": true,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Custom"
+          },
+          "HOVER": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 64
+              }
+            },
+            "enable": false,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-divider-secondary)",
+                "width": "1px"
+              }
+            },
+            "listLayout": "Auto"
+          },
+          "SELECTED": {
+            "cardSize": {
+              "LARGE": {
+                "width": 360,
+                "height": 64
+              }
+            },
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "var(--sys-color-action-selected)",
+                "width": "1px"
+              }
+            },
+            "selectionMode": "SINGLE",
+            "listLayout": "Auto"
+          }
+        },
+        "style": {
+          "id": "default"
+        },
+        "isCheckEmptyTemplate": false,
+        "searchOpen": true,
+        "searchFields": [
+          "site_code",
+          "site_name"
+        ],
+        "searchExact": false,
+        "searchHint": "Search site code or name",
+        "filters": null,
+        "sorts": [
+          {
+            "ruleOptionName": "River Mile",
+            "rule": [
+              {
+                "jimuFieldName": "river_mile",
+                "order": "ASC"
+              }
+            ]
+          },
+          {
+            "ruleOptionName": "Site Code",
+            "rule": [
+              {
+                "jimuFieldName": "site_code",
+                "order": "ASC"
+              }
+            ]
+          }
+        ],
+        "sortOpen": true,
+        "linkParam": {
+          "linkType": "VIEW",
+          "value": "page_1,view_2"
+        },
+        "isShowAutoRefresh": false,
+        "layoutType": "ROW",
+        "keepAspectRatio": false
+      },
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_card",
+          "MEDIUM": "layout_card",
+          "SMALL": "layout_card"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "site_code",
+            "site_name",
+            "river_mile",
+            "status",
+            "sector"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true,
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "style": "esriSFSSolid",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_3": {
+      "id": "widget_3",
+      "uri": "widgets/common/text/",
+      "version": "1.20.0",
+      "label": "Card Text",
+      "config": {
+        "text": "<p><span style=\"font-size:14px;font-weight:bold;\"><exp data-uniqueid=\"ab37885c1a9a\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_code%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_code%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22site_code%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_code}</exp></span><span style=\"font-size:14px;\"> &mdash; <exp data-uniqueid=\"d8056331236c\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsite_name%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsite_name%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22site_name%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{site_name}</exp></span></p><p><span style=\"font-size:12px;color: var(--sys-color-surface-paper-hint);\">RM <exp data-uniqueid=\"cf963441dc51\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Briver_mile%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Briver_mile%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22river_mile%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{river_mile}</exp> &bull; <exp data-uniqueid=\"4aa6e71ccd80\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bstatus%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bstatus%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22status%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{status}</exp> &bull; Sector <exp data-uniqueid=\"7af065269d0b\" data-dsid=\"dataSource_1-SNK_sites\" data-expression=\"%7B%22name%22%3A%22%7Bsector%7D%22%2C%22parts%22%3A%5B%7B%22type%22%3A%22FIELD%22%2C%22exp%22%3A%22%7Bsector%7D%22%2C%22dataSourceId%22%3A%22dataSource_1-SNK_sites%22%2C%22jimuFieldName%22%3A%22sector%22%2C%22isFromRepeatedDataSourceContext%22%3Atrue%7D%5D%7D\">{sector}</exp></span></p>",
+        "placeholder": "",
+        "style": {
+          "verticalAlign": "center",
+          "wrap": true,
+          "overflow": "hidden",
+          "padding": "p-1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "site_code",
+            "site_name",
+            "river_mile",
+            "status",
+            "sector"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_6": {
+      "id": "widget_6",
+      "uri": "widgets/common/filter/",
+      "version": "1.20.0",
+      "label": "Sector Filter",
+      "config": {
+        "groupByLayer": false,
+        "logicalOperator": "OR",
+        "custom": false,
+        "resetAll": false,
+        "turnOffAll": true,
+        "arrangeType": "INLINE",
+        "triggerType": "BUTTON",
+        "omitInternalStyle": true,
+        "filterItems": [
+          {
+            "type": "SINGLE",
+            "name": "S1",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-SNK_sites",
+                "mainDataSourceId": "dataSource_1-SNK_sites",
+                "rootDataSourceId": "dataSource_1",
+                "fields": [
+                  "sector"
+                ]
+              }
+            ],
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "sector",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "SIMPLE_SELECT",
+                    "value": [
+                      {
+                        "value": 1,
+                        "label": "1"
+                      }
+                    ]
+                  },
+                  "displayType": "NONE",
+                  "askForValueOptions": null,
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "sector = 1",
+              "displaySQL": "(Sector = 1)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          },
+          {
+            "type": "SINGLE",
+            "name": "S2",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-SNK_sites",
+                "mainDataSourceId": "dataSource_1-SNK_sites",
+                "rootDataSourceId": "dataSource_1",
+                "fields": [
+                  "sector"
+                ]
+              }
+            ],
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "sector",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "SIMPLE_SELECT",
+                    "value": [
+                      {
+                        "value": 2,
+                        "label": "2"
+                      }
+                    ]
+                  },
+                  "displayType": "NONE",
+                  "askForValueOptions": null,
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "sector = 2",
+              "displaySQL": "(Sector = 2)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          },
+          {
+            "type": "SINGLE",
+            "name": "S3",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-SNK_sites",
+                "mainDataSourceId": "dataSource_1-SNK_sites",
+                "rootDataSourceId": "dataSource_1",
+                "fields": [
+                  "sector"
+                ]
+              }
+            ],
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "sector",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "SIMPLE_SELECT",
+                    "value": [
+                      {
+                        "value": 3,
+                        "label": "3"
+                      }
+                    ]
+                  },
+                  "displayType": "NONE",
+                  "askForValueOptions": null,
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "sector = 3",
+              "displaySQL": "(Sector = 3)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          },
+          {
+            "type": "SINGLE",
+            "name": "S4",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-SNK_sites",
+                "mainDataSourceId": "dataSource_1-SNK_sites",
+                "rootDataSourceId": "dataSource_1",
+                "fields": [
+                  "sector"
+                ]
+              }
+            ],
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "sector",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "SIMPLE_SELECT",
+                    "value": [
+                      {
+                        "value": 4,
+                        "label": "4"
+                      }
+                    ]
+                  },
+                  "displayType": "NONE",
+                  "askForValueOptions": null,
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "sector = 4",
+              "displaySQL": "(Sector = 4)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          },
+          {
+            "type": "SINGLE",
+            "name": "S5",
+            "useDataSources": [
+              {
+                "dataSourceId": "dataSource_1-SNK_sites",
+                "mainDataSourceId": "dataSource_1-SNK_sites",
+                "rootDataSourceId": "dataSource_1",
+                "fields": [
+                  "sector"
+                ]
+              }
+            ],
+            "sqlExprObj": {
+              "logicalOperator": "AND",
+              "parts": [
+                {
+                  "type": "SINGLE",
+                  "jimuFieldName": "sector",
+                  "operator": "NUMBER_OPERATOR_IS",
+                  "valueOptions": {
+                    "isValid": true,
+                    "sourceType": "USER_INPUT",
+                    "inputEditor": "SIMPLE_SELECT",
+                    "value": [
+                      {
+                        "value": 5,
+                        "label": "5"
+                      }
+                    ]
+                  },
+                  "displayType": "NONE",
+                  "askForValueOptions": null,
+                  "displayLabel": null,
+                  "caseSensitive": false
+                }
+              ],
+              "sql": "sector = 5",
+              "displaySQL": "(Sector = 5)"
+            },
+            "autoApplyWhenWidgetOpen": false,
+            "collapseFilterExprs": false
+          }
+        ],
+        "wrap": false
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "sector"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "uri": "widgets/common/navigator/",
+      "version": "1.20.0",
+      "label": "View Nav",
+      "config": {
+        "data": {
+          "type": "AUTO",
+          "section": "section_1",
+          "views": [
+            "view_1",
+            "view_2"
+          ]
+        },
+        "display": {
+          "advanced": false,
+          "vertical": false,
+          "type": "nav",
+          "navStyle": "default",
+          "standard": {
+            "scrollable": true,
+            "textAlign": "center",
+            "gap": "0px",
+            "showText": true,
+            "showIcon": false,
+            "iconPosition": "start"
+          }
+        }
+      }
+    },
+    "widget_5": {
+      "id": "widget_5",
+      "uri": "widgets/arcgis/feature-info/",
+      "version": "1.20.0",
+      "label": "Site Details",
+      "config": {
+        "useMapWidget": false,
+        "limitGraphics": true,
+        "maxGraphics": 10,
+        "noDataMessage": "Select a site from the list.",
+        "styleType": "usePopupDefined",
+        "style": {
+          "textColor": "",
+          "fontSizeType": "auto",
+          "fontSize": {
+            "distance": 14,
+            "unit": "px"
+          },
+          "backgroundColor": ""
+        },
+        "dsNavigator": false,
+        "featureNavigator": true,
+        "showCount": false,
+        "clearSelection": false,
+        "dsConfigs": [
+          {
+            "id": "dsConfig_0",
+            "label": "Strategy Sites",
+            "useDataSourceId": "dataSource_1-SNK_sites-selection",
+            "contentConfig": {
+              "title": true,
+              "fields": true,
+              "media": true,
+              "attachments": true,
+              "lastEditInfo": false
+            }
+          }
+        ]
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-SNK_sites-selection",
+          "mainDataSourceId": "dataSource_1-SNK_sites",
+          "rootDataSourceId": "dataSource_1",
+          "dataViewId": "selection"
+        }
+      ],
+      "useDataSourcesEnabled": true,
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "style": "esriSFSSolid",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_8": {
+      "id": "widget_8",
+      "uri": "widgets/common/menu/",
+      "version": "1.20.0",
+      "label": "Menu",
+      "config": {
+        "type": "drawer",
+        "menuStyle": "default",
+        "vertical": true,
+        "standard": {}
+      }
+    },
+    "widget_9": {
+      "id": "widget_9",
+      "uri": "widgets/common/menu/",
+      "version": "1.20.0",
+      "label": "Menu 2",
+      "config": {
+        "type": "drawer",
+        "menuStyle": "default",
+        "vertical": true,
+        "standard": {}
+      }
+    },
+    "widget_10": {
+      "id": "widget_10",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "label": "Site Inset Map",
+      "config": {
+        "initialMapDataSourceID": "dataSource_1",
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": false,
+          "canSearch": false,
+          "canNavigation": false
+        },
+        "isUseCustomMapState": false
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_12": {
+      "id": "widget_12",
+      "uri": "widgets/spill-trace-snake/",
+      "version": "1.0.0",
+      "label": "Spill Trajectory",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "config": {
+        "safetyFactor": 1.5,
+        "minStreamOrder": 4,
+        "maxHours": 24,
+        "maxDistanceKm": 300,
+        "listSyncSiteCodeField": "site_code",
+        "siteLayers": [
+          {
+            "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Strategy_Sites_pub/FeatureServer/0",
+            "nameField": "site_name",
+            "bufferM": 500,
+            "where": "status <> 'rejected'",
+            "extraFields": [
+              "river_mile",
+              "strategy_type",
+              "GlobalID",
+              "site_code"
+            ],
+            "boomLayer": {
+              "url": "https://services6.arcgis.com/Ji79lWGR5B33LhY7/arcgis/rest/services/SNK_Boom_Lines_pub/FeatureServer/0",
+              "siteKeyField": "site_globalid"
+            }
+          }
+        ],
+        "receptorLayers": [],
+        "equipment": {
+          "enabled": true,
+          "entrainmentMs": 0.35,
+          "anchorSpacingFt": 100,
+          "reservePct": 20
+        }
+      }
+    },
+    "widget_11": {
+      "id": "widget_11",
+      "uri": "widgets/common/controller/",
+      "version": "1.20.0",
+      "label": "Map Tools",
+      "config": {
+        "behavior": {
+          "onlyOpenOne": false,
+          "openStarts": [],
+          "displayType": "SIDEBYSIDE",
+          "vertical": false,
+          "size": {
+            "widget_12": {
+              "width": 360,
+              "height": 560
+            },
+            "widget_7": {
+              "width": 300,
+              "height": 400
+            }
+          },
+          "arrangement": "floating"
+        },
+        "appearance": {
+          "space": 4,
+          "advanced": false,
+          "card": {
+            "showLabel": true,
+            "labelGrowth": 30,
+            "avatar": {
+              "type": "primary",
+              "size": "sm",
+              "shape": "rectangle",
+              "buttonSize": null,
+              "iconSize": null
+            }
+          }
+        }
+      },
+      "layouts": {
+        "controller": {
+          "LARGE": "layout_ctrl_map",
+          "MEDIUM": "layout_ctrl_map",
+          "SMALL": "layout_ctrl_map"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "attributes": {
+    "portalUrl": "https://wrienviro.maps.arcgis.com"
+  }
+}
